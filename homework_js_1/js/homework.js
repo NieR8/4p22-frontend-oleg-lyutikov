@@ -15,7 +15,7 @@ const button = document.getElementById('btn');
 button.addEventListener('click',(event)=> {
 	event.preventDefault();
 
-	if ((firstNumInput.value == '0' || secondNumInput.value == '0') && signInput.value == '/') {
+	if (secondNumInput.value == '0' && signInput.value == '/') {
 
 		console.log('Операция некорректна')
 	}
@@ -35,7 +35,7 @@ button.addEventListener('click',(event)=> {
 		console.log('Не введён знак')
 	}
 
-	else if (/[a-zа-яё]/i.test(firstNumInput.value) || /[a-zа-яё]/i.test(secondNumInput.value) ) {
+	else if (isNaN(Number(firstNumInput.value)) || isNaN(Number(secondNumInput.value)) ) {
 		console.log('Некорректный ввод чисел')
 	} 
 	
