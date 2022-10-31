@@ -35,7 +35,7 @@ button.addEventListener('click',(event)=> {
 		console.log('Не введён знак')
 	}
 
-	else if (isNaN(Number(firstNumInput.value)) || isNaN(Number(secondNumInput.value)) ) {
+	else if ((isNaN(Number(firstNumInput.value)) || isNaN(Number(secondNumInput.value))) || (firstNumInput.value.trim() == '' || secondNumInput.value.trim() == '') ) {
 		console.log('Некорректный ввод чисел')
 	} 
 	
