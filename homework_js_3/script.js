@@ -26,13 +26,10 @@ fetch('https://reqres.in/api/users?per_page=12')
 						console.log(`	${key}: ${element[key]}`)
 					}
 					console.log('....................')
-					// console.log(element)
 				}
 			})
 
 			console.log('-----------------------------------')
-
-			// console.log(info.data)
 
 			const resStr = info.data.reduce((accum, element, index) => {
 
@@ -51,8 +48,6 @@ fetch('https://reqres.in/api/users?per_page=12')
 
 			console.log('-----------------------------------')
 			console.log('Названия всех ключей в объекте пользователя:')
-
-			
 
 			console.log(Object.keys(info.data[0]).join(', '))
 
