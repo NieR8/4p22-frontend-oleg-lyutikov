@@ -1,14 +1,6 @@
-// 'use strict'
-
-// const emailInput = document.getElementById('email')
-// const passwordInput = document.getElementById('password')
-// const passwordConfirmation = document.getElementById('password-confirmation')
-
+'use strict'
 
 const form = document.getElementById('form');
-
-
-
 
 function validateForm(event) {
 
@@ -84,14 +76,12 @@ function validateForm(event) {
 		document.getElementById('password-error').style.color = "red"
 		password.style.borderColor = "red"
 
-
 	} 
 	
 	else {
 
 		document.getElementById('password-error').innerHTML = ''
 		password.style.borderColor = '#787878'
-		
 
 	}
 	
@@ -104,14 +94,12 @@ function validateForm(event) {
 
 	} 
 
-
 	else {
 
 		document.getElementById('password-confirmation-error').innerHTML = ''
 		passwordConfirmation.style.borderColor = '#787878'
 		console.log(values)
 	}
-
 }
 
 form.addEventListener('submit', validateForm)
